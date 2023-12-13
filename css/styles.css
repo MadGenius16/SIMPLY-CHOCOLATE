@@ -10,12 +10,26 @@ button {
     cursor: pointer;
 }
 
-.logo {
+body {
     font-family: 'Montserrat', sans-serif;
+}
+.logo {
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 20px;
-    letter-spacing: -0.54px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
     color: #111;
+}  
+
+.menu-link {
+    color: #111;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #FD9222;
 }
