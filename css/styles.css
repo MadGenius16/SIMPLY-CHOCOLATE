@@ -12,6 +12,7 @@ button {
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #fafafa;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -57,6 +58,11 @@ ul,ol {
     overflow: hidden;
 }
 
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 /* < !-- HEADER --> */
 
 .logo {
@@ -100,7 +106,7 @@ ul,ol {
 
 .menu {
     display: flex;
-    gap: 24px;
+    column-gap: 24px;
 }
 
 
@@ -157,6 +163,13 @@ ul,ol {
 
 /* < !-- BENEFITS --> */
 
+.benefits {
+background: var(--violet, #1E1823);
+margin-top: 72px;
+margin-bottom: 50px;
+}
+
+
 .benefits-list-title {
     color: #111;
     font-size: 18px;
@@ -185,6 +198,10 @@ ul,ol {
 }
 
 .ingredients-description {
+    width: 486px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     color: #111;
     text-align: center;
     font-size: 14px;;
@@ -192,6 +209,48 @@ ul,ol {
     line-height: 1.29;
     letter-spacing: -0.02em;
 }
+
+.ingredients-section-title{
+    width: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 28px;
+}
+
+.ingredients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 19px;
+}
+
+.ingredients-list-item {
+    padding: 28px 32px;
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+     width: calc((100% - 57px) / 4);
+}
+
+.ingredients-list-item:nth-child(4n + 1) {
+    color: #ffffff;
+    background-color: #fd9222;
+}
+
+.ingredients-list-item:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.ingredients-list-item:nth-child(4n + 3) {
+    color: #ffffff;
+    background-color: #1e1823;
+    border-color: #1e1823;
+}
+
+.ingredients-list-img {
+    margin-bottom: 36px;
+}
+
+
+
 
 /* < !-- /INGREDIENTS --> */
 
