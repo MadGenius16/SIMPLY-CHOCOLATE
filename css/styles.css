@@ -161,7 +161,13 @@ ul,ol {
     margin-right: auto;
     border-radius: 30px;
     background-color: rgba(17, 17, 17, 0.6);
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.40),
+        rgba(17, 17, 17, 0.40)
+    ), url(../images/bg-chocolate.jpg);
+    background-size: cover;
 }
+
 
 .main-title {
     color: #FFF;
@@ -189,6 +195,7 @@ ul,ol {
     border: none;
     border-radius: 100px;
     margin-right: 14px;
+    transition: color 250ms linear, background 250ms linear;
 }
 
 .buy-now-btn:hover,
@@ -200,12 +207,12 @@ ul,ol {
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
-    text-align: center;
     min-width: 183px;
     border-radius: 100px;
     border: 1px solid #FFF;
     padding: 14px 40px;
     margin-right: auto;
+    transition: color 250ms linear, border-color 250ms linear;
 }
 
 .how-made-link:hover,
@@ -215,11 +222,15 @@ ul,ol {
 }
 
 .scroll-down-link {
+    display: flex;
+    gap: 14px;
+    align-items: center;
     color: #FFF;
     font-size: 14px;
     font-weight: 500;
     line-height: 0.13;
     letter-spacing: -0.03em;
+    transition: color 250ms linear;
 }
 
 .scroll-down-link:hover,
@@ -227,23 +238,54 @@ ul,ol {
     color: #FD9222;
 }
 
+.scroll-down-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    fill: #fd9222;
+    transition: background-color 250ms linear, fill 250ms linear;
+    }
+    
+.scroll-down-link:hover .scroll-down-icon-wrapper,
+.scroll-down-link:focus .scroll-down-icon-wrapper {
+    background-color: #fd9222;
+    fill: #FFF;
+    }
+
+
 /* < !-- /HERO --> */
 
 /* < !-- BENEFITS --> */
 
 .benefits {
-background: var(--violet, #1E1823);
+background-color: #1E1823;
 margin-top: 72px;
 margin-bottom: 50px;
 }
 
 .benefits-list {
     display: flex;
-    gap: 70px;
+    gap: 88px;
 }
 
 .benefits-list-item {
-    width: 308px;
+    position: relative;
+    width: calc((100% - 176px) / 3);
+}
+
+.benefits-list-item:not(:last-child)::after {
+    position: absolute;
+    top: 50%;
+    right: -18px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    content: '';
 }
 
 .benefits-list-title {
@@ -258,6 +300,18 @@ margin-bottom: 50px;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.02em;
+    line-height: 1.29;
+}
+
+.benefits-list-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
 }
 
 /* < !-- /BENEFITS --> */
@@ -301,10 +355,30 @@ margin-bottom: 50px;
 }
 
 .ingredients-list-item {
+    position: relative;
     padding: 28px 32px;
     border-radius: 15px;
     border: 1px solid #FD9222;
-     width: calc((100% - 57px) / 4);
+    width: calc((100% - 57px) / 4);
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    padding: 20px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms linear;
+}
+
+.ingredients-list-item:hover .overlay {
+transform: translateY(0%);
 }
 
 .ingredients-list-item:nth-child(4n + 1) {
@@ -325,9 +399,6 @@ margin-bottom: 50px;
 .ingredients-list-img {
     margin-bottom: 36px;
 }
-
-
-
 
 /* < !-- /INGREDIENTS --> */
 
