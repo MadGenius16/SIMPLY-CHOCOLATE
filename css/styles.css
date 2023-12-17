@@ -485,7 +485,7 @@ transform: translateY(0%);
     display: flex;
     flex-direction: column;
     gap: 24px;
-    padding-left: 26px;
+    padding-left: 14px;
     width: 452px;
 }
 
@@ -552,6 +552,7 @@ transform: translateY(0%);
     padding: 14px 40px;
     margin-left: auto;
     margin-right: auto;
+    transition: background-color 250ms linear, color 250ms linear;
  }
 
  .leave-review-btn:hover,
@@ -598,12 +599,12 @@ transform: translateY(0%);
 
 .contact-list-link {
     color: #FFF;
-    
     font-size: 14px;
     font-weight: 400;
     line-height: 1.29;
     letter-spacing: -0.02em;
     font-style: normal;
+    transition: color 250ms linear;
 }
 
 .contact-list-link:hover,
@@ -654,6 +655,7 @@ transform: translateY(0%);
     min-height: 794px;
     border-radius: 15px;
     background: #FAFAFA;
+    padding: 40px;
 }
 
 .modal-close-btn {
@@ -673,17 +675,155 @@ transform: translateY(0%);
     stroke: #fd9222;
 }
 
+.review-form-discription {
+    color: #111;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    width: 298px;
+    margin-bottom: 40px;
+}
+
+.review-form-field-label {
+    display: block;
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+}
+
+.review-form-input {
+    width: 100%;
+    height: 68px;
+    border-radius: 13px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    background-color: transparent;
+    padding-left: 62px;
+    transition: border-color 250ms linear;
+    outline: 0px solid transparent;
+}
+
+.review-form-field-wrapper {
+    margin-bottom: 18px;
+}
+
+.review-form-input-wrapper {
+    position: relative;
+}
+.review-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-50%);
+    stroke: #404040;
+    transition: stroke 250ms linear;
+}
+
+.review-form-input:focus {
+    border-color: #FD9222;
+}
+
+.review-form-input:focus + .review-form-input-icon {
+    stroke: #FD9222;
+}
+
+.review-form-conmment {
+    width: 100%;
+    height: 137px;
+    border-radius: 13px;
+    border: 1px solid rgba(17, 17, 17, 0.05);
+    background-color: transparent;
+    padding: 22px 24px;
+    resize: none;
+    outline: 0px solid transparent;
+    transition: border-color 250ms linear;
+    color: rgba(64, 64, 64, 0.30);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+.review-form-conmment::placeholder {
+    color: rgba(64, 64, 64, 0.30);
+}
+
+.review-form-conmment:focus {
+    border-color: #FD9222;
+}
+
+.review-form-checkbox-wrapper {
+margin-bottom: 40px;
+}
+
+.review-form-checkbox-label {
+    color: rgba(64, 64, 64, 0.60);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02em
+}
 
 
 
+.review-form-own-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    cursor: pointer;
+    margin-right: 12px;
 
+}
 
+.review-form-checkbox:checked
+ + .review-form-checkbox-label
+ > .review-form-own-checkbox {
+    background-color: #FD9222;
+    border-color: #fd9222;
+}
 
+.review-form-checkbox-icon {
+    fill: #fff;
+    opacity: 0;
+}
 
+.review-form-checkbox:checked 
++.review-form-checkbox-label
+.review-form-checkbox-icon {
+opacity: 1;
+}
 
+.review-form-checkbox:focus 
++ .review-form-checkbox-label
+> .review-form-own-checkbox {
+outline: 2px solid rgba(17, 17, 17, 0.14);
+}
 
+.review-form-submit-btn {
+    display: block;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    background-color: #FD9222;
+    padding: 14px 40px;
+    width: 117;
+    height: 45;
+    transition: background-color 250ms linear, color 250ms linear;
+}
 
-
+.review-form-submit-btn:focus,
+.review-form-submit-btn:hover {
+    background-color: #FCF1E0;
+    color: #FD9222;
+}
 
   /* < !-- Modal --> */
 
