@@ -613,12 +613,56 @@ transform: translateY(0%);
 }
 
 .page-footer-botom-block {
+    display: flex;
     padding-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
 }
 
 .page-footer-menu-link {
     color: #ffffff;
 }
+
+.your-email-form-wrapper {
+    display: flex;
+    gap: 8px;
+}
+
+.your-email-input {
+    width: 313px;
+    height: 52px;
+    padding: 14px 24px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.30);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    background-color: transparent;
+}
+
+.your-email-form-submit-btn {
+    width: 137px;
+    height: 52px;
+    border-radius: 100px;
+    border: none;
+    background-color: #FD9222;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 250ms linear, color 250ms linear;
+}
+
+.your-email-form-submit-btn:focus,
+.your-email-form-submit-btn:hover {
+    background-color: #FCF1E0;
+        color: #FD9222;
+}
+
  /* < !-- /FOOTER --> */
 
  /* < !-- Backdrop --> */
