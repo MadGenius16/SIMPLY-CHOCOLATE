@@ -145,7 +145,11 @@
                 </p>
                 <ul class="ingredients-list list">
                     <li class="ingredients-list-item">
-                        <img class="ingredients-list-img" src="./images/milk-ch.png" alt="MILK CHOCOLATE" width="206" height="160">
+                        <img 
+                        class="ingredients-list-img" 
+                        srcset="./images/milk-ch@2x.png 2x"
+                        src="./images/milk-ch.png" 
+                        alt="MILK CHOCOLATE" width="206" height="160">
                         <h3>MILK CHOCOLATE</h3>
                         <div class="overlay">
                             <h3 class="overlay-title">Milk chocolate</h3>
@@ -165,7 +169,11 @@
                         </div>
                     </li>
                     <li class="ingredients-list-item">
-                        <img class="ingredients-list-img" src="./images/milk.png" alt="MILK" width="206" height="160">
+                        <img 
+                        class="ingredients-list-img" 
+                        srcset="./images/milk@2x.png 2x"
+                        src="./images/milk.png" 
+                        alt="MILK" width="206" height="160">
                         <h3>MILK</h3>
                         <div class="overlay">
                             <h3 class="overlay-title">milk</h3>
@@ -184,7 +192,11 @@
                             </p>
                     </li>
                     <li class="ingredients-list-item">
-                        <img class="ingredients-list-img" src="./images/nuts.png" alt="NUTS" width="206" height="160">
+                        <img 
+                        class="ingredients-list-img" 
+                        srcset="./images/nuts@2x.png 2x"
+                        src="./images/nuts.png" 
+                        alt="NUTS" width="206" height="160">
                         <h3>NUTS</h3>
                         <div class="overlay">
                             <h3 class="overlay-title">nuts</h3>
@@ -203,7 +215,11 @@
                             </p>
                     </li>
                     <li class="ingredients-list-item">
-                        <img class="ingredients-list-img" src="./images/semi.png" alt="SEMI-SWEET CHOCOLATE" width="206" height="160">
+                        <img 
+                        class="ingredients-list-img" 
+                        srcset="./images/semi@2x.png 2x"
+                        src="./images/semi.png" 
+                        alt="SEMI-SWEET CHOCOLATE" width="206" height="160">
                         <h3>SEMI-SWEET CHOCOLATE</h3>
                         <div class="overlay">
                             <h3 class="overlay-title">semi - sweet chocolate</h3>
@@ -234,8 +250,30 @@
                     <span class="accent">MADE?</span>
                 </h2>
                 <div class="how-made-content-wrapper">
-                    <img class="how-made-img" src="./images/imagechocolate-making-process.jpg" alt="imagechocolate-making-process"
-                        width="600" height="400">
+                    <picture>
+                        <source
+                        srcset="
+                        ./images/making-process.jpg 1x, 
+                        ./images/making-process@2x.jpg 2x" 
+                        media="(min-width: 1136px)">
+                        <source 
+                        srcset="
+                        ./images/making-process-tab.jpg 1x, 
+                        ./images/making-process-tab@2x.jpg 2x" 
+                        media="(min-width: 768px)">
+                        <source 
+                        srcset="
+                        ./images/making-process-mobile.jpg 1x, 
+                        ./images/making-process-mobile@2x.jpg 2x" 
+                        media="(max-width: 767px)">
+                        <img 
+                        class="how-made-img" 
+                        src="./images/making-process.jpg" 
+                        alt="imagechocolate-making-process" 
+                        width="600"
+                        height="400">
+                    </picture>
+                    
                     <div class="how-made-text-wrapper">
                         <h3 class="how-made-list-title">Try our chocolates today and discover the perfect balance of flavor</h3>
                         <ul class="how-made-list">
@@ -274,7 +312,11 @@
                 </h2>
                 <ul class="reviews-list list">
                     <li class="reviews-list-item">
-                        <img class="reviews-list-avatar" src="./images/victoria_dobrzhanska.jpg" alt="Victoria Dobrzhanska" width="80"
+                        <img 
+                        class="reviews-list-avatar" 
+                        srcset="./images/victoria_dobrzhanska@2x.jpg 2x"
+                        src="./images/victoria_dobrzhanska.jpg" 
+                        alt="Victoria Dobrzhanska" width="80"
                             height="80">
                         <h3 class="reviews-list-fullname">Victoria Dobrzhanska</h3>
                         <p class="reviews-list-text">
@@ -282,7 +324,11 @@
                         </p>
                     </li">
                     <li class="reviews-list-item">
-                        <img class="reviews-list-avatar" src="./images/nazar.jpg" alt="Nazar Babenko" width="80" height="80">
+                        <img 
+                        class="reviews-list-avatar" 
+                        srcset="./images/nazar@2x.jpg 2x"
+                        src="./images/nazar.jpg" 
+                        alt="Nazar Babenko" width="80" height="80">
                         <h3 class="reviews-list-fullname">Nazar Babenko</h3>
                         <p class="reviews-list-text">
                             This chocolate confection is a delight! A delight! The wafer is light and crisp, the hazelnut cream is
@@ -291,7 +337,11 @@
                         </p>
                     </li>
                     <li class="reviews-list-item">
-                        <img class="reviews-list-avatar" src="./images/olena-kam.jpg" alt="Olena Kampusch" width="80" height="80">
+                        <img 
+                        class="reviews-list-avatar" 
+                        srcset="./images/olena-kam@2x.jpg 2x"
+                        src="./images/olena-kam.jpg" 
+                        alt="Olena Kampusch" width="80" height="80">
                         <h3 class="reviews-list-fullname">Olena Kampusch</h3>
                         <p class="reviews-list-text">
                             Chocolate is a family favourite treat. Love the delicious smooth chocolate and the creaminess inside. The

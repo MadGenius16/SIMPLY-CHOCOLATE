@@ -168,6 +168,13 @@ ul,ol {
     background-size: cover;
 }
 
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+.hero {
+    background-image: linear-gradient(rgba(17, 17, 17, 0.40), rgba(17, 17, 17, 0.40)), url(../images/bg-chocolate@2x.jpg);
+    }
+}
 
 .main-title {
     color: #FFF;
