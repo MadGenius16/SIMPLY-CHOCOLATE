@@ -507,7 +507,7 @@ transform: translateY(0%);
  }
  
 .reviews-title {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 
  .reviews-list {
@@ -518,6 +518,7 @@ transform: translateY(0%);
  }
 
  .reviews-list-item {
+    position: relative;
     width: calc((100% - 56px) / 3);
     padding-top: 56px;
     padding-right: 24px;
@@ -538,7 +539,12 @@ transform: translateY(0%);
     line-height: 1.33;
     margin-bottom: 24px;
  }
-
+.reviews-list-avatar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
  
  .reviews-list-text {
     color: rgba(17, 17, 17, 0.70);
